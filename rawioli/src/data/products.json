@@ -1,0 +1,14 @@
+
+
+{
+    "products": [
+      { "name": "Kabanosy Tarczyński", "image": "./products/tarczynski.png", "price": "5,99e" },
+      { "name": "Masło Łaciate", "image": "./products/masłoŁaciate.png", "price": "1,99e" },
+      { "name": "Ketchup Kotlin", "image": "./products/ketchupKotlin.png", "price": "2,99e" },
+      { "name": "Musztarda miodowa", "image": "./products/musztardaMiodowa.png", "price": "1,99e" },
+      { "name": "Musztarda deserowa", "image": "./products/musztardaDeserowa.png", "price": "1,99e" },
+      { "name": "Mleko Łaciate", "image": "./products/mlekoŁaciate.png", "price": "1,29e" },
+      { "name": "Śmietana Piątnica 18%", "image": "./products/smietana12.png", "price": "1,49e" },
+      { "name": "Ser królewski", "image": "./products/serKrólewski.png", "price": "11,99e" }
+    ]
+  }
