@@ -12,9 +12,9 @@ function App() {
     <>
       <Navigation />
       <Home />
-      <Where/>
       <About/>
-      <Cooperation/>
+      <Where/>
+      
       <Footer/>
     </>
   );

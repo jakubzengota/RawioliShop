@@ -41,7 +41,7 @@ const Footer = () => {
         
 
         <div className='footerBottom'>
-            <span>&copy; Copyright 2024 All rights reserved</span>
+            <span>&copy; Jakub Zengota Copyright 2024 All rights reserved</span>
         </div>
 
     </div>

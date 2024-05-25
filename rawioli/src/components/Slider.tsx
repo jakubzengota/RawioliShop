@@ -1,29 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import styled from 'styled-components';
 import data from '../data/products.json';
 
-interface SlideWrapperProps {
-  translate: number;
-}
-
-const SliderContainer = styled.div`
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-`;
-
-const SlideWrapper = styled.div<SlideWrapperProps>`
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-  transform: translateX(${props => props.translate}%);
-`;
-
-const Product = styled.div`
-  min-width: 50%;
-  box-sizing: border-box;
-  padding: 20px;
-  text-align: center;
-`;
 
 const Slider = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
