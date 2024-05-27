@@ -21,7 +21,7 @@ const Navigation: React.FC<NavigationProps> = ({ homeRef, footerRef }) => {
     return (
         <nav className="navigation">
             <div className="logoDiv">
-                <img className="logo" src={logo} alt="logo"/>
+                <img className="logo" onClick={scrollToHome} src={logo} alt="logo"/>
             </div>
             <div className="navMenu right">
                 <span className="navSpan" onClick={scrollToHome}>{translations.about}</span>
