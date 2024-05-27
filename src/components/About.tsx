@@ -1,8 +1,18 @@
-import  { useContext } from 'react';
+import  { RefObject, useContext } from 'react';
 import mainrawioli from '../assets/mainrawioli.png'
 import LanguageContext from '../utils/LanguageContext';
-const About = () => {
+
+
+interface NavigationProps {
+  aboutRef: RefObject<HTMLDivElement>;
+}
+
+const About: React.FC<NavigationProps> = ({ aboutRef }) => {
     const { translations } = useContext(LanguageContext);
+
+    const scrollToAbout = () => {
+      aboutRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
   return (
     <div className="about">
          {/* <div className='aboutGlassDivLeft'>
