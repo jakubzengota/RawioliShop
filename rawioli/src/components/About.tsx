@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import mainrawioli from '../assets/mainrawioli.png'
-
+import LanguageContext from '../utils/LanguageContext';
 const About = () => {
+    const { translations, toggleLanguage } = useContext(LanguageContext);
   return (
     <div className="about">
          {/* <div className='aboutGlassDivLeft'>
@@ -13,7 +14,7 @@ const About = () => {
             <div className="mainravioliDiv">
                 <img className="mainravioli" src={mainrawioli} alt="Owners of the shop" />
             </div>
-            <span className='aboutSpan'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid eum officiis ullam fugiat asperiores enim, sint nostrum ad consectetur fuga ducimus odio ut, porro tempora quis placeat excepturi, repellat sapiente.</span>
+            <span className='aboutSpan'>{translations.desc2}</span>
         </div>
         
     </div>

@@ -1,23 +1,32 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './App.css';
 import Home from './components/Home';
 import About from './components/About';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import Where from './components/Where';
-import Cooperation from './components/Cooperation';
 
-function App() {
-  return (
-    <>
-      <Navigation />
-      <Home />
-      <About/>
-      <Where/>
-      
-      <Footer/>
-    </>
-  );
+import { LanguageProvider } from './utils/LanguageContext';
+
+const App: React.FC = () => {
+    const homeRef = useRef<HTMLDivElement>(null);
+    const footerRef = useRef<HTMLDivElement>(null);
+
+    return (
+        <>
+            <LanguageProvider>
+                <Navigation homeRef={homeRef} footerRef={footerRef} />
+                <div ref={homeRef}>
+                    <Home />
+                </div>
+                <About />
+                <Where />
+                <div ref={footerRef}>
+                    <Footer />
+                </div>
+            </LanguageProvider>
+        </>
+    );
 }
 
 export default App;

@@ -93,6 +93,10 @@ body{
  
 }
 
+.toUpperCase{
+  text-transform: capitalize;
+}
+
 .fbIconDiv{
   display: flex;
   align-items: center;
@@ -166,10 +170,10 @@ body{
 }
 
 .logoDiv {
-  position: absolute;  /* Logo jest teraz absolutnie pozycjonowane */
-  left: 50%;           /* Ustawione na środku nawigacji */
-  transform: translateX(-50%); /* Przesunięcie o połowę szerokości logo w lewo, aby centrować dokładnie */
-  z-index: 2;          /* Logo jest nad pozostałymi elementami */
+  /* position: absolute; 
+  left: 50%;         
+  transform: translateX(-50%); */
+  z-index: 2;
 }
 
 .left, .right {
@@ -221,12 +225,34 @@ body{
 }
 
 .navSpan{
-  color: var(--backgroundColor);
+  color: var(--greenMain);
   font-size: 16px;
   cursor: pointer;
   font-weight: bold;
   transition: 0.2s ease;
   text-transform: uppercase;
+}
+
+.navSpanLang{
+  color: var(--backgroundColor);
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s ease;
+  text-transform: uppercase;
+}
+
+.navSpanLangSlash{
+  color: var(--backgroundColor);
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s ease;
+  text-transform: uppercase;
+}
+
+.navSpanLang:hover{
+  transform: scale(1.1);
 }
 
 .navSpan:hover{
@@ -287,7 +313,7 @@ body{
 }
 
 .footer{
-  padding: 2rem 3rem 1rem 3rem;
+  padding: 2rem 3rem 2rem 3rem;
   width: 100%;
   background-color: var(--navigationBackgroundColor);
   color: var(--textColor);
@@ -435,4 +461,121 @@ body{
   height: 40vh;
   align-items: center;
   justify-content: center;
+}
+
+@media (width < 1000px) {
+  .home{
+
+  }
+
+  .where{
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .map{
+    display: none;
+  }
+
+  .aboutGlassDivRight{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .homeGlassDivLeft{
+    width: 100%;
+  }
+
+  .logo{
+    width: 70px;
+  }
+
+  .navSpan{
+    font-size: 12px;
+    padding-right: 1rem;
+  }
+  .navMenu{
+    gap: 1rem;
+  }
+
+  .navSpanLangSlash{
+    font-size: 12px;
+    color: var(--greenMain);
+  }
+
+  .navSpanLang{
+    font-size: 12px;
+    color: var(--greenMain);
+  }
+
+  .homeGlassSpan{
+    font-size: 15px;
+    color: var(--footerColor);
+  }
+
+  .fbIconDiv{
+    font-size: 12px;
+    color: var(--footerColor);
+  }
+
+  .aboutSpan{
+    font-size: 13px;
+  }
+
+  .mainravioli{
+    width: 200px;
+    height: 200px;
+    border: 3px solid black;
+  }
+
+
+
+  .whereLeftSpan{
+    font-size: 12px !important;
+  }
+
+  .navigation{
+    padding: 5px;
+  }
+
+  .navMenu{
+    gap: 15px;
+  }
+  body{
+    letter-spacing: normal;
+  }
+
+  .ourCompanySpan{
+    font-size: 18px;
+  }
+
+  .footerLeft{
+    font-size: 10px;
+  }
+
+  .footerRightInfoDiv{
+    font-size: 10px;
+  }
+
+  .footerRight{
+    align-items: normal;
+  }
+
+  .right{
+    padding-right: 15px;
+  }
+
+  .rawiolikasa{
+    width: 150px;
+    border: 3px solid black;
+  }
+
+  .logoDiv{
+    padding-left: 5px;
+  }
 }

@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import logo from "../assets/logo.svg"
 import PhoneIcon from '../assets/icons/PhoneIcon';
 import LocationIcon from '../assets/icons/LocationIcon';
 import MailIcon from '../assets/icons/MailIcon';
-
+import LanguageContext from '../utils/LanguageContext';
 const Footer = () => {
+    const { translations, toggleLanguage } = useContext(LanguageContext);
+
   return (
     <div className="footer">
         <div className='footerContent'>
@@ -20,28 +22,27 @@ const Footer = () => {
                 </div>
                 <div className='footerLeftInfoDiv'>
                     <LocationIcon/>
-                    <span>Kloosterstraat 64, Grubbenvorst, Netherlands</span>
+                    <span>{translations.location}</span>
                 </div>
             </div>
             <div className='footerRight'>
                 <div className='footerRightInfoDiv'>
-                    <span className='ourCompanySpan'>Nasza firma</span>
+                    <span className='ourCompanySpan'>{translations.ourCompany}</span>
                 </div>
                 <div className='footerRightInfoDiv'>
-                    <span>Promocje</span>
+                    <span className='toUpperCase'>{translations.promo}</span>
                 </div>
                 <div className='footerRightInfoDiv'>
-                    <span>O nas</span>
+                    <span className='toUpperCase'>{translations.about}</span>
                 </div>
                 <div className='footerRightInfoDiv'>
-                    <span>Kontakt z nami</span>
+                    <span className='toUpperCase'>{translations.contact}</span>
                 </div>
             </div>
         </div>
         
-
         <div className='footerBottom'>
-            <span>&copy; Jakub Zengota Copyright 2024 All rights reserved</span>
+            <span>&copy; 2024 Jakub Zengota. All rights reserved</span>
         </div>
 
     </div>
