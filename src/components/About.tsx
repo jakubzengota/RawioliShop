@@ -7,12 +7,10 @@ interface NavigationProps {
   aboutRef: RefObject<HTMLDivElement>;
 }
 
-const About: React.FC<NavigationProps> = ({ aboutRef }) => {
+const About: React.FC<NavigationProps> = () => {
     const { translations } = useContext(LanguageContext);
 
-    const scrollToAbout = () => {
-      aboutRef.current?.scrollIntoView({ behavior: 'smooth' });
-  };
+
   return (
     <div className="about">
          {/* <div className='aboutGlassDivLeft'>
