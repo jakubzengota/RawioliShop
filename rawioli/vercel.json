@@ -1,0 +1,14 @@
+{
+    "builds": [
+      {
+        "src": "package.json",
+        "use": "@vercel/node",
+        "config": { "includeFiles": ["node_modules/.bin/**"] }
+      }
+    ],
+    "build": {
+      "env": {
+        "CI": "false"
+      }
+    }
+  }
