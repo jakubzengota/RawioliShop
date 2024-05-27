@@ -1,11 +1,11 @@
-import React, { useContext } from 'react';
+import  { useContext } from 'react';
 import logo from "../assets/logo.svg"
 import PhoneIcon from '../assets/icons/PhoneIcon';
 import LocationIcon from '../assets/icons/LocationIcon';
 import MailIcon from '../assets/icons/MailIcon';
 import LanguageContext from '../utils/LanguageContext';
 const Footer = () => {
-    const { translations, toggleLanguage } = useContext(LanguageContext);
+    const { translations } = useContext(LanguageContext);
 
   return (
     <div className="footer">

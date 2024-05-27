@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import  { useContext } from "react";
 import "font-awesome/css/font-awesome.min.css";
 import "leaflet/dist/leaflet.css";
 import rawiolikasa from "../assets/paniwiolaprzykasie.png";
@@ -6,7 +6,7 @@ import LocalizationIcon from "../assets/icons/LocalizationIcon";
 import LanguageContext from '../utils/LanguageContext';
 
 const Where = () => {
-  const { translations, toggleLanguage } = useContext(LanguageContext);
+  const { translations } = useContext(LanguageContext);
   return (
     <div className="where">
       <div className="whereLeft">

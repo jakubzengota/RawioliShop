@@ -1,12 +1,6 @@
-import React, { useContext, useRef } from 'react';
-import Navigation from './Navigation';
-import mainravioli from "../assets/mainrawioli.png";
-import Slider from './Slider';
-import PhoneIcon from '../assets/icons/PhoneIcon';
-import MailIcon from '../assets/icons/MailIcon';
+import { useContext, useRef } from 'react';
 import 'font-awesome/css/font-awesome.min.css';
 import AnimatedPageLeft from './AnimatedPageLeft';
-import AnimatedPageRight from './AnimatedPageRight';
 import LinkedInIcon from '../assets/icons/LinkedInIcon';
 import LanguageContext from '../utils/LanguageContext';
 
@@ -14,7 +8,7 @@ import LanguageContext from '../utils/LanguageContext';
 
 
 const Home = () => {
-    const { translations, toggleLanguage } = useContext(LanguageContext);
+    const { translations} = useContext(LanguageContext);
     const homeRef = useRef(null);
 
 

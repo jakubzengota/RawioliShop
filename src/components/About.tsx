@@ -1,8 +1,8 @@
-import React, { useContext } from 'react';
+import  { useContext } from 'react';
 import mainrawioli from '../assets/mainrawioli.png'
 import LanguageContext from '../utils/LanguageContext';
 const About = () => {
-    const { translations, toggleLanguage } = useContext(LanguageContext);
+    const { translations } = useContext(LanguageContext);
   return (
     <div className="about">
          {/* <div className='aboutGlassDivLeft'>

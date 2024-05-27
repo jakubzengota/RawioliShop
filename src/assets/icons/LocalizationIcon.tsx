@@ -1,7 +1,7 @@
 function LocalizationIcon() {
     return (
-<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-	 width="48px" height="48px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" 
+	 width="48px" height="48px" viewBox="0 0 64 64" enable-background="new 0 0 64 64">
 <g>
 	<path fill="#F76D57" d="M32,52.789l-12-18C18.5,32,16,28.031,16,24c0-8.836,7.164-16,16-16s16,7.164,16,16
 		c0,4.031-2.055,8-4,10.789L32,52.789z"/>
