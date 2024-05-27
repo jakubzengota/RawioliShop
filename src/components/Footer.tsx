@@ -1,11 +1,22 @@
-import  { useContext } from 'react';
+import  { RefObject, useContext } from 'react';
 import logo from "../assets/logo.svg"
 import PhoneIcon from '../assets/icons/PhoneIcon';
 import LocationIcon from '../assets/icons/LocationIcon';
 import MailIcon from '../assets/icons/MailIcon';
 import LanguageContext from '../utils/LanguageContext';
-const Footer = () => {
+
+interface NavigationProps {
+    homeRef: RefObject<HTMLDivElement>;
+    footerRef: RefObject<HTMLDivElement>;
+}
+
+
+const Footer: React.FC<NavigationProps> = ({ homeRef }) => {
     const { translations } = useContext(LanguageContext);
+
+    const scrollToHome = () => {
+        homeRef.current?.scrollIntoView({ behavior: 'smooth' });
+    };
 
   return (
     <div className="footer">
@@ -30,10 +41,7 @@ const Footer = () => {
                     <span className='ourCompanySpan'>{translations.ourCompany}</span>
                 </div>
                 <div className='footerRightInfoDiv'>
-                    <span className='toUpperCase'>{translations.promo}</span>
-                </div>
-                <div className='footerRightInfoDiv'>
-                    <span className='toUpperCase'>{translations.about}</span>
+                    <span className='toUpperCase' onClick={scrollToHome}>{translations.about}</span>
                 </div>
                 <div className='footerRightInfoDiv'>
                     <span className='toUpperCase'>{translations.contact}</span>

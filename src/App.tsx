@@ -22,7 +22,7 @@ const App: React.FC = () => {
                 <About />
                 <Where />
                 <div ref={footerRef}>
-                    <Footer />
+                    <Footer homeRef={homeRef} footerRef={footerRef} />
                 </div>
             </LanguageProvider>
         </>

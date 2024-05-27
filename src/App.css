@@ -422,6 +422,7 @@ body{
 .whereLeft{
   display: flex;
   align-items: center;
+  text-align: center;
   padding: 2rem;
   flex-direction: column;
   border-radius: 25px;
@@ -438,7 +439,7 @@ body{
 .whereLeftSpan{
   text-transform: uppercase;
   font-size: 18px;
-  color: var(--backgroundColor);
+  color: var(--footerColor);
 }
 
 .whereRight{
@@ -451,7 +452,10 @@ body{
 
 .where span {
   font-size: 18px;
-  margin-bottom: 20px;
+}
+
+.whereLeftSpanHoursMain{
+  font-weight: bold;
 }
 
 

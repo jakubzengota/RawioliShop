@@ -23,6 +23,22 @@ const Where = () => {
         <span className="whereLeftSpan">
           {translations.location}
         </span>
+
+        <span className="whereLeftSpanHoursMain">
+          {translations.openHoursNormal}
+        </span>
+
+        <span className="whereLeftSpanHours">
+          {translations.openHoursMonday}
+        </span>
+
+        <span className="whereLeftSpanHours">
+          {translations.openHoursRest}
+        </span>
+
+        <span className="whereLeftSpanHours">
+          {translations.openHoursSunday}
+        </span>
       </div>
 
 

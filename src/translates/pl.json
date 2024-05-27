@@ -6,6 +6,11 @@
     "desc2": "Nasz sklep współpracuje również z FC Polonia Venlo, na ich meczach możecie częstować się produktami prosto z Naszego sklepu. Zapraszamy na mecze!",
     "visitUs": "Odwiedź nas na",
     "location": "KLOOSTERSTRAAT 64, GRUBBENVORST, HOLANDIA",
-    "ourCompany": "Nasza firma"
+    "ourCompany": "Nasza firma",
+    "openHoursNormal": "Godziny otwarcia",
+    "openHoursMonday": "Poniedziałek 11:00-20:00",
+    "openHoursRest": "Wtorek - Sobota 10:00-20:00",
+    "openHoursSunday": "Niedziela 12:00-18:00"
+
 
 }
